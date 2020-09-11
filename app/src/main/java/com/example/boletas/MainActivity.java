@@ -54,8 +54,10 @@ public class MainActivity extends AppCompatActivity {
         _boletasIngresadas.setText("Boletas Ingresadas:" + String.valueOf(contador));
         _idTotal.setText("Total: " + String.valueOf(getTotal()));
         _idProm.setText("Promedio: " + String.valueOf(getProm()));
-        _idBajo.setText("Bajo: " + String.valueOf(getLowest().getFolio()) + String.valueOf(getLowest().getMonto()));
-        _idAlto.setText("Alto: " + String.valueOf(getHighest().getFolio()) + String.valueOf(getHighest().getMonto()));
+        /*if (contador > 2){
+            _idBajo.setText("Bajo: " + String.valueOf(getLowest().getFolio()) + String.valueOf(getLowest().getMonto()));
+            _idAlto.setText("Alto: " + String.valueOf(getHighest().getFolio()) + String.valueOf(getHighest().getMonto()));
+        }*/
     }
 
     //metodos implementados para la solucion del problema
